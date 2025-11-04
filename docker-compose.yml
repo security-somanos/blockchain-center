@@ -1,0 +1,15 @@
+services:
+  blockchain-center_web:
+    build: .
+    container_name: blockchain-center_web
+    restart: always
+    networks:
+      - webapps
+    ports:
+      - "3003:3000" # Map container port 3000 → host port 3003
+    environment:
+      - NODE_ENV=production
+
+networks:
+  webapps:
+    external: true
