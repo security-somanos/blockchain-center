@@ -30,13 +30,7 @@ export default function Header() {
               <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-black/90 border-l border-t border-white/20 rotate-45"></div>
             </div>
           </div>
-          <div className="relative group">
-            <Link href="#" className="text-gray-300 hover:text-white transition-colors">Academy</Link>
-            <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 px-3 py-1 bg-black/90 border border-white/20 rounded-lg text-xs text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap backdrop-blur">
-              Coming Soon
-              <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-black/90 border-l border-t border-white/20 rotate-45"></div>
-            </div>
-          </div>
+          <Link href="/academy" className="text-gray-300 hover:text-white transition-colors">Academy</Link>
 			<Link href="/news" className="text-gray-300 hover:text-white transition-colors">News</Link>
 			<Link href="/events" className="text-gray-300 hover:text-white transition-colors">Events</Link>
 			<div className="relative group">
@@ -91,13 +85,7 @@ export default function Header() {
                   <div className="absolute -left-1 top-1/2 transform -translate-y-1/2 w-2 h-2 bg-black/90 border-b border-l border-white/20 rotate-45"></div>
                 </div>
               </div>
-              <div className="relative group">
-                <Link href="#" className="block rounded-md px-2 py-2 text-gray-200 hover:bg-white/5">Academy</Link>
-                <div className="absolute left-full top-1/2 transform -translate-y-1/2 ml-2 px-3 py-1 bg-black/90 border border-white/20 rounded-lg text-xs text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap backdrop-blur">
-                  Coming Soon
-                  <div className="absolute -left-1 top-1/2 transform -translate-y-1/2 w-2 h-2 bg-black/90 border-b border-l border-white/20 rotate-45"></div>
-                </div>
-              </div>
+              <Link href="/academy" className="block rounded-md px-2 py-2 text-gray-200 hover:bg-white/5">Academy</Link>
 				<Link href="/news" className="block rounded-md px-2 py-2 text-gray-200 hover:bg-white/5">News</Link>
 				<Link href="/events" className="block rounded-md px-2 py-2 text-gray-200 hover:bg-white/5">Events</Link>
 				<div className="relative group">

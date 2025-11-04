@@ -5,6 +5,10 @@ import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import NoiseEffect from "../components/NoiseEffect";
+import { VideoPlayerProvider } from "../contexts/VideoPlayerContext";
+import { VideoPlayer } from "../components/VideoPlayer";
+import { AudioPlayerProvider } from "../contexts/AudioPlayerContext";
+import { AudioPlayerBar } from "../components/AudioPlayerBar";
 
 const roobert = localFont({
   src: [
@@ -76,10 +80,16 @@ export default function RootLayout({
       <body
         className={`${roobert.variable} antialiased`}
       >
-        <NoiseEffect />
-        <Header />
-        {children}
-        <Footer />
+        <VideoPlayerProvider>
+          <AudioPlayerProvider>
+            <NoiseEffect />
+            <Header />
+            {children}
+            <Footer />
+            <VideoPlayer />
+            <AudioPlayerBar />
+          </AudioPlayerProvider>
+        </VideoPlayerProvider>
       </body>
     </html>
   );
