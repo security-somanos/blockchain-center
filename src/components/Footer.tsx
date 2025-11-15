@@ -175,7 +175,6 @@ export default function Footer() {
       <div className="px-6 py-4 text-center md:text-right">
         <div className="text-white text-sm">
           <div>Blockchain Center ©2025 All rights reserved</div>
-          <div className="text-white/60 text-xs mt-1">Tailor-made by Blockchain Center</div>
         </div>
       </div>
     </footer>
